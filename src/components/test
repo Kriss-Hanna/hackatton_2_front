@@ -1,0 +1,97 @@
+import ProductItem from './ProductItem';
+import withContext from '../withContext';
+
+const ProductList = (props) => {
+  const { products } = props.context;
+  const [select, setSelect] = useState({
+    name: '',
+    price: '',
+  });
+
+  const filter = (e) => {
+    setSelect({ [e.target.name]: e.target.value });
+
+    console.log(select);
+    return (
+      <>
+        <div className="hero is-primary">
+          <div className="hero-body container">
+            <h4 className="title">Our Products</h4>
+          </div>
+          <form>
+            <select value={select.name} onChange={filter}>
+              <option name="filtre" value="">
+                Filtre par type
+              </option>
+              <option name="yourte" value="Yourte">
+                Yourte
+              </option>
+              <option name="cabane" value="Cabane">
+                Cabane
+              </option>
+              <option name="kerterre" value="Kerterre">
+                Kerterre
+              </option>
+              <option name="troglodyte" value="Troglodyte">
+                Troglodyte
+              </option>
+              <option name="tinyhouse" value="Tiny House">
+                Tiny House
+              </option>
+            </select>
+          </form>
+          <form>
+            <select value={select.price} onChange={filter}>
+              <option name="filtre" value="">
+                Filtre prix{' '}
+              </option>
+              <option name="yourte" value="10000">
+                Prix supérieur 10.000{' '}
+              </option>
+              <option name="cabane" value="20000">
+                Prix supérieur 20.000{' '}
+              </option>
+              <option name="kerterre" value="50000">
+                Prix supérieur 50.000
+              </option>
+              <option name="troglodyte" value="70000">
+                Prix supérieur 70.000
+              </option>
+              <option name="tinyhouse" value="100000">
+                Prix supérieur 100.000
+              </option>
+            </select>
+          </form>
+        </div>
+        <br />
+        <div className="container">
+          <div className="column columns is-multiline">
+            {products && products.length ? (
+              products
+                .filter((filtre) => {
+                  return (
+                    filtre.name.includes(select.name) 
+                  )
+                })
+                .map((product, index) => (
+                  <ProductItem
+                    product={product}
+                    key={index}
+                    addToCart={props.context.addToCart}
+                  />
+                ))
+            ) : (
+              <div className="column">
+                <span className="title has-text-grey-light">
+                  No products found!
+                </span>
+              </div>
+            )}
+          </div>
+        </div>
+      </>
+    );
+  };
+};
+
+export default withContext(ProductList);

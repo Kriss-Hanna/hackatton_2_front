@@ -1,10 +1,14 @@
 .App {
   text-align: center;
+  background-image: url('./images/tiny-banner.jpeg') ;
+  background-size : cover;
+  min-height: 100vh
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  color: #ff0000;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +18,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0e5af1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +40,18 @@
     transform: rotate(360deg);
   }
 }
+
+.form-button {
+  display: flex;
+  justify-content: center;
+}
+
+.boxyou {
+  background-color:#ced4d2;
+}
+
+
+.container{
+  background-color:rgba(224, 217, 217, 0.568);
+}
+
