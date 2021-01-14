@@ -48,10 +48,10 @@ const ProductList = (props) => {
             products
               .filter(
                 (filtre) =>
-                props.match.params.id === "mobilier"|| 
-                  filtre.name.includes(props.match.params.id) &&
-                  filtre.price >= select.price
-              )
+                (props.match.params.id === "mobilier"|| 
+                  (filtre.name.includes(props.match.params.id) &&
+                  filtre.price >= select.price)
+              ))
               .map((product, index) => (
                 <ProductItem
                   product={product}

@@ -1,5 +1,5 @@
 .App {
-  background-image: url('./images/tiny-banner.jpeg');
+  background-image: url('./images/toui_9.png');
   background-position-x: center;
   background-repeat: no-repeat;
 
@@ -69,7 +69,6 @@
   color: white;
   font-style: italic;
   font-size: 17px;
-  background-image: url('');
 }
 
 .category {
@@ -105,8 +104,7 @@
   background-color: rgba(180, 192, 178, 0.952);
 }
 
-.found {
-}
+
 .found h1 {
   margin-bottom: 140px;
   color: white;
@@ -116,9 +114,6 @@
 
 /* Not found */
 
-.notfound-content {
-  
-}
 
 .notfound-text {
   font-size: 45px;
