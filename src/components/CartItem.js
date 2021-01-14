@@ -1,10 +1,17 @@
 import React from "react";
+import Helmet from 'react-helmet'
 
 const CartItem = props => {
   const { cartItem, cartKey } = props;
 
   const { product, amount } = cartItem;
   return (
+    <> 
+    <Helmet>    
+    <title>Carte Item </title>
+    <link rel="canonical" href=""></link>
+    <meta name="Carte Item" content="Product List"></meta>
+  </Helmet>
     <div className=" column is-half">
       <div className="box">
         <div className="media">
@@ -33,6 +40,7 @@ const CartItem = props => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

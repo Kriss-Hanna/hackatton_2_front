@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import withContext from "../withContext";
+import Helmet from 'react-helmet'
 
 class Login extends Component {
   constructor(props) {
@@ -31,9 +32,14 @@ class Login extends Component {
   render() {
     return !this.props.context.user ? (
       <>
-        <div className="hero is-primary ">
+      <Helmet>    
+      <title>Connexion</title>
+      <link rel="canonical" href=""></link>
+      <meta name="Connexion" content="Formulaire de connexion pour le site MydreamHouse"></meta>
+    </Helmet>
+        <div className="success is-primary ">
           <div className="hero-body container">
-            <h4 className="title">Login</h4>
+            <h1 className="title">Login</h1>
           </div>
         </div>
         <br />

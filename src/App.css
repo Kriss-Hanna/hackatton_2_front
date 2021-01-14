@@ -1,8 +1,10 @@
 .App {
-  text-align: center;
-  background-image: url('./images/tiny-banner.jpeg') ;
-  background-size : cover;
-  min-height: 100vh
+  background-image: url('./images/tiny-banner.jpeg');
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100vh;
 }
 
 .App-logo {
@@ -18,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #0e5af1;
+  background-color: #a1a2a5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -47,11 +49,85 @@
 }
 
 .boxyou {
-  background-color:#ced4d2;
+  background-color: #ced4d2;
 }
 
-
-.container{
-  background-color:rgba(224, 217, 217, 0.568);
+.container {
+  background-color: rgba(224, 217, 217, 0.568);
 }
 
+.field-card {
+  background-image: url('https://images.unsplash.com/photo-1592057953689-b04459636106?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1341&q=80');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+}
+.field-card p {
+  color: white;
+  font-style: italic;
+  font-size: 17px;
+  background-image: url('');
+}
+
+.category {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* home */
+
+.home-content {
+  display: flex;
+}
+
+.home-text {
+  margin-top: 10em;
+  font-size: 45px;
+}
+
+.home-text {
+  color: black;
+}
+
+.navbar-brand a {
+  color: rgba(85, 10, 95, 0.952);
+}
+.navbar-item {
+  background-color: rgba(180, 192, 178, 0.952);
+}
+
+.navbar-menu {
+  background-color: rgba(180, 192, 178, 0.952);
+}
+
+.found {
+}
+.found h1 {
+  margin-bottom: 140px;
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+}
+
+/* Not found */
+
+.notfound-content {
+  
+}
+
+.notfound-text {
+  font-size: 45px;
+  color: black;
+  margin-left: 15em;
+  margin-top: 6em;
+}
+
+.notfound-link {
+  text-decoration: none;
+  color: black;
+}

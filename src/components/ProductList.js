@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProductItem from './ProductItem';
 import withContext from '../withContext';
+import Helmet from 'react-helmet'
 
 import '../App.css'
 
@@ -15,24 +16,19 @@ const ProductList = (props) => {
     setSelect({ ...select, [e.target.name]: e.target.value });
   };
 
-  console.log(select);
+  console.log(props.match.params);
   return (
     <>
+    <Helmet>    
+      <title>Product List</title>
+      <link rel="canonical" href=""></link>
+      <meta name="Product List" content="Product List"></meta>
+    </Helmet>
       <div className="hero-isprimary">
         <div className="hero-body container">
           <h4 className="title">Our Products</h4>
         </div>
-        <div className="form-button">
-          <form>
-            <select value={select.name} name="name" onChange={filter}>
-              <option value="">Filtre par type</option>
-              <option value="Yourte">Yourte</option>
-              <option value="Cabane">Cabane</option>
-              <option value="Kerterre">Kerterre</option>
-              <option value="Troglodyte">Troglodyte</option>
-              <option value="Tiny House">Tiny House</option>
-            </select>
-          </form>
+        <div className="form-button">          
           <form>
             <select value={select.price} name="price" onChange={filter}>
               <option value="">Filtre prix </option>
@@ -52,7 +48,8 @@ const ProductList = (props) => {
             products
               .filter(
                 (filtre) =>
-                  filtre.name.includes(select.name) &&
+                props.match.params.id === "mobilier"|| 
+                  filtre.name.includes(props.match.params.id) &&
                   filtre.price >= select.price
               )
               .map((product, index) => (

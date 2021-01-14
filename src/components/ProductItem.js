@@ -1,9 +1,16 @@
 import React from "react";
+import Helmet from 'react-helmet'
 
 const ProductItem = props => {
   const { product } = props;
  
   return (
+    <>
+    <Helmet>    
+      <title>Product Item </title>
+      <link rel="canonical" href=""></link>
+      <meta name="Product Item" content="Product List"></meta>
+    </Helmet>
     <div className=" column ishalf">
       <div className="boxyou">
         <div className="media">
@@ -44,6 +51,7 @@ const ProductItem = props => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

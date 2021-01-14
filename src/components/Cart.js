@@ -1,21 +1,27 @@
 import React from "react";
 import withContext from "../withContext";
 import CartItem from "./CartItem";
+import Helmet from 'react-helmet';
 
 const Cart = props => {
   const { cart } = props.context;
   const cartKeys = Object.keys(cart || {});
   return (
     <>
-      <div className="hero is-primary">
-        <div className="hero-body container">
-          <h4 className="title">My Cart</h4>
+     <Helmet>    
+      <title>Mon panier</title>
+      <link rel="canonical" href=""></link>
+      <meta name="Panier" content="Page du panier du site MydreamHouse"></meta>
+    </Helmet>
+      <div className="success is-primary">
+        <div >
+          <h1 className="title">My Cart</h1>
         </div>
       </div>
       <br />
-      <div className="container">
+      <div >
         {cartKeys.length ? (
-          <div className="column columns is-multiline">
+          <div >
             {cartKeys.map(key => (
               <CartItem
                 cartKey={key}

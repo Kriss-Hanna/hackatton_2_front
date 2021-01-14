@@ -2,13 +2,16 @@ import React, { Component } from "react";
 import { Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
+import Helmet from 'react-helmet'
 
 import Home from './components/Home';
+import Products from './components/Products';
 import AddProduct from './components/AddProduct';
 import Cart from './components/Cart';
 import Login from './components/Login';
 import ProductList from './components/ProductList';
-import Banner from './components/Banner'
+import Banner from './components/Banner';
+import NotFound from './components/NotFound';
 
 import Context from "./Context";
 
@@ -123,6 +126,12 @@ export default class App extends Component {
 
   render() {
     return (
+      <div className="youri">
+        <Helmet>
+                <title>My dream House</title>
+                <link rel="canonical" href=""></link>
+                <meta name="immobiliers insolite" content="Presentation du site!"></meta>
+        </Helmet>
       <Context.Provider
         value={{
           ...this.state,
@@ -136,6 +145,7 @@ export default class App extends Component {
       >
         <Router ref={this.routerRef}>
         <div className="App">
+          
           <nav
             className="navbar container"
             role="navigation"
@@ -193,14 +203,17 @@ export default class App extends Component {
             <Banner />
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/products" component={Products} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/cart" component={Cart} />
               <Route exact path="/add-product" component={AddProduct} />
-              <Route exact path="/products" component={ProductList} />
+              <Route exact path="/products/:id" component={ProductList} />
+              <Route component={NotFound} />
             </Switch>
           </div>
         </Router>
       </Context.Provider>
+      </div>
     );
   }
 }
