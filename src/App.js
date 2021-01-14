@@ -202,7 +202,7 @@ export default class App extends Component {
             </nav>
             <Banner />
             <Switch>
-              <Route exact path="/" component={Home} />
+              {/* <Route exact path="/" component={Home} /> */}
               <Route exact path="/home" component={Home} />
               <Route exact path="/products" component={Products} />
               <Route exact path="/login" component={Login} />
