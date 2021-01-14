@@ -14,12 +14,15 @@ const ProductItem = props => {
       <div className="boxyou">
         <div className="media">
           <div className="media-left">
-            <figure className="image is-64x64">
-              <img className="image"
+            
+            
+              <div className="imageFF">
+              <img 
                 src={product.images}
                 alt={product.name}
               />
-            </figure>
+               </div>
+            
           </div>
           <div className="media-content">
             <b style={{ textTransform: "capitalize" }}>
@@ -28,13 +31,13 @@ const ProductItem = props => {
             </b>
             <div>{product.shortDesc}</div>
             {product.stock > 0 ? (
-              <small>{product.stock + " Available"}</small>
+              <small>{product.stock + " en stock"}</small>
             ) : (
-              <small className="has-text-danger">Out Of Stock</small>
+              <small className="has-text-danger">Plus de stock !</small>
             )}
             <div className="is-clearfix">
               <button
-                className="button is-small is-outlined is-primary   is-pulled-right"
+                className="buut"
                 onClick={() =>
                   props.addToCart({
                     id: product.name,
@@ -43,7 +46,7 @@ const ProductItem = props => {
                   })
                 }
               >
-                Add to Cart
+                Ajouter au panier
               </button>
             </div>
           </div>

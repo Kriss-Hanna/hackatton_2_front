@@ -15,7 +15,7 @@
     {
       "id": "hdmdu0t80yjkfqselfc",
       "name": "Yourte en Kit ",
-      "stock": 10,
+      "stock": 7,
       "price": 9000,
       "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpBwQAC70VyC7yA2fzaK5ulH6I_AGk0nLGfw&usqp=CAU",
       "description": ""
@@ -25,7 +25,7 @@
       "name": "Tiny House à l'ancienne",
       "stock": 20,
       "price": 20000,
-      "images": "https://lh3.googleusercontent.com/proxy/siVNrwmkkUmR01CmxHT3BUrZDNpj-2aIt2YrnmqHWafI5773w6YYoHh46T5_0ZTZL9K_QCwcaoQ0zR_d6vQtIwGjR0jDU2XM1yF4jXIqrdq7otxpJPrsyx_ONQGH5sWzyd2PPBfFQR1sVewFVe3PjE3fE6MyhG423bOilnvdiRvBc20uiWRiDpZZD1k",
+      "images": "https://www.fenetremeo.com/sites/default/files/styles/visuel_header_ambiance/public/images/dossiers/nid-155/tiny%20house%20Flamenco%20header.jpg?itok=vC3ovaUs",
       "description": ""
     },
     {
@@ -33,7 +33,7 @@
       "name": "Cabane suspendu",
       "stock": 15,
       "price": 15000,
-      "images": "https://www.cabanes-de-france.com/wp-content/uploads/2017/02/la-cabane-de-la-riviere-de-dos.jpg",
+      "images": "https://www.outside.fr/wp-content/uploads/2020/08/tree-house.jpg",
       "description": ""
     },
     {
@@ -56,7 +56,7 @@
       "id": "sd9evcxu85kjvlzd76",
       "name": "Petite Maison Troglodyte",
       "price": 700000,
-      "stock": "1",
+      "stock": 0,
       "images": "https://www.france-balades.fr/id28074/id28074-original-01.jpg",
       "description": ""
     },
@@ -64,10 +64,10 @@
       "id": "bd5evsku85kjvlzd77",
       "name": "Maison Troglodyte ",
       "price": 90000,
-      "stock": 1,
+      "stock": 0,
       "images": "https://i.pinimg.com/originals/d0/50/03/d0500376a56cd7598a63453aa9a54350.jpg",
       "description": ""
-    },    
+    },
     {
       "id": "bmfrurdkswtkfqsf178j",
       "name": "Cabane Luxueuse",
@@ -89,13 +89,13 @@
       "name": "Kerterre Champêtre",
       "stock": 7,
       "price": 12000,
-      "images": "https://lh3.googleusercontent.com/proxy/VvN-VflaSaG0j_6qNFqMrT3YsNwN0f_sArW0V4KiK-PNHpV4CsuOjz3aaq1_Nqt0pil9ROrk06LwOMmAOsYIXAN4bkmDnxOvi6AJdvkXHlM9jrZhWd61kY32A7M-VQ",
+      "images": "https://lh3.googleusercontent.com/proxy/6yjVRQLuiqZZJUjPGn3qitW99M8FG97R1w_G55ZIc0kk1OzNYaiQzo4oMLALc0sWpXq26taoK8aRi6uS-XIC14TOPp50TGRtWNiwsDTpUHsTz9Fnun98W42XHthQIg",
       "description": ""
     },
     {
       "id": "bmfrurdkswtkfq8902j",
       "name": "Yourte de luxe",
-      "stock": 7,
+      "stock": 6,
       "price": 50000,
       "images": "https://sc02.alicdn.com/kf/HTB1Y3AMXlUSMeJjy1zkq6yWmpXax.jpg_350x350.jpg",
       "description": ""
@@ -105,9 +105,8 @@
       "name": "Yourte Boisée",
       "stock": 9,
       "price": 20000,
-      "images": "https://img-3.journaldesfemmes.fr/7Mo4x-fHc2RkPMa-IS4K_KiNYm8=/910x607/smart/5371799ed83849d9ab7627fbc038bff0/ccmcms-jdf/20447776.jpg",
+      "images": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Yourte_mongole_cropped.JPG/1200px-Yourte_mongole_cropped.JPG",
       "description": ""
     }
   ]
 }
-

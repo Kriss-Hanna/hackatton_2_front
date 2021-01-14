@@ -16,7 +16,7 @@ const ProductList = (props) => {
     setSelect({ ...select, [e.target.name]: e.target.value });
   };
 
-  console.log(props.match.params);
+  console.log(select.price);
   return (
     <>
     <Helmet>    
@@ -26,10 +26,10 @@ const ProductList = (props) => {
     </Helmet>
       <div className="hero-isprimary">
         <div className="hero-body container">
-          <h4 className="title">Our Products</h4>
+          <h1 className="title">Nos Habitations</h1>
         </div>
         <div className="form-button">          
-          <form>
+          <form className="filter">
             <select value={select.price} name="price" onChange={filter}>
               <option value="">Filtre prix </option>
               <option value="10000">Prix supérieur 10.000 </option>
@@ -47,11 +47,9 @@ const ProductList = (props) => {
           {products && products.length ? (
             products
               .filter(
-                (filtre) =>
-                (props.match.params.id === "mobilier"|| 
-                  (filtre.name.includes(props.match.params.id) &&
-                  filtre.price >= select.price)
-              ))
+                (filtre) =>               
+                (filtre.price >= select.price) && ( props.match.params.id === "all" || 
+                  filtre.name.includes(props.match.params.id)))
               .map((product, index) => (
                 <ProductItem
                   product={product}
@@ -62,7 +60,7 @@ const ProductList = (props) => {
           ) : (
             <div className="column">
               <span className="title has-text-grey-light">
-                No products found!
+                Désolé, aucun produit trouvé !
               </span>
             </div>
           )}

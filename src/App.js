@@ -128,8 +128,8 @@ export default class App extends Component {
     return (
       <div className="youri">
         <Helmet>
-                <title>My dream House</title>
-                <link rel="canonical" href=""></link>
+                <title>My Dream House</title>
+                <link rel="canonical" href="http://localhost:3000/products"></link>
                 <meta name="immobiliers insolite" content="Presentation du site!"></meta>
         </Helmet>
       <Context.Provider
@@ -148,11 +148,12 @@ export default class App extends Component {
           
           <nav
             className="navbar container"
+            className="navbar"
             role="navigation"
             aria-label="main navigation"
           >
             <div className="navbar-brand">
-              <a href="http://localhost:3000/home" className="navbar-item is-size-4">MydreamHouse</a>
+              <a href="http://localhost:3000/home" className="navbar-item is-size-4">MyDreamHouse</a>
               <label
                 role="button"
                 class="navbar-burger burger"
@@ -173,15 +174,15 @@ export default class App extends Component {
                   this.state.showMenu ? "is-active" : ""
                 }`}>
                 <Link to="/products" className="navbar-item">
-                  Products
+                  Produits
                 </Link>
                 {this.state.user && this.state.user.accessLevel < 1 && (
                   <Link to="/add-product" className="navbar-item">
-                    Add Product
+                    Ajouter au panier
                   </Link>
                 )}
                 <Link to="/cart" className="navbar-item">
-                  Cart
+                  Panier
                   <span
                     className="tag is-primary"
                     style={{ marginLeft: "5px" }}
@@ -191,18 +192,18 @@ export default class App extends Component {
                 </Link>
                 {!this.state.user ? (
                   <Link to="/login" className="navbar-item">
-                    Login
+                    Se connecter
                   </Link>
                 ) : (
                   <Link to="/" onClick={this.logout} className="navbar-item">
-                    Logout
+                    Se déconnecter
                   </Link>
                 )}
               </div>
             </nav>
             <Banner />
-            <Switch>
-              {/* <Route exact path="/" component={Home} /> */}
+            <Switch>              
+              <Route exact path="/" component={Home} />
               <Route exact path="/home" component={Home} />
               <Route exact path="/products" component={Products} />
               <Route exact path="/login" component={Login} />

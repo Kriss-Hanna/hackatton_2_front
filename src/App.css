@@ -1,10 +1,17 @@
-.App {
-  background-image: url('https://images.unsplash.com/photo-1551927411-95e412943b58?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1887&q=80');
-  background-position-x: center;
+* {
+  font-family: 'Big Shoulders Stencil Text', cursive;
+}
+body {
+  background-image: url("https://www.decoidees.be/wp-content/uploads/2019/12/LumiPod_by_Lumicene_3%C2%A9oxygen.jpg");
   background-repeat: no-repeat;
+  background-position: center;  
+  min-height: 100vh;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+ 
+}
 
-  width: 100%;
-  height: 250vh;
+h1 , h2 {
+  color: #4a4a4a;
 }
 
 .App-logo {
@@ -49,24 +56,28 @@
 }
 
 .boxyou {
-  background-color: #ced4d2;
+  background-color: rgb(115, 148, 190);
 }
+
 
 .container {
   background-color: rgba(224, 217, 217, 0.568);
 }
 
 .field-card {
-  background-image: url('https://images.unsplash.com/photo-1592057953689-b04459636106?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1341&q=80');
   display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
   height: 200px;
   margin: 1em;
+  border-radius : 2em ;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCfpasLagF5aIXVv3HCwnWmqLhYFP5BTi8cw&usqp=CAU') ;
+  opacity: 0.5;
+  ;
 }
 .field-card p {
-  color: white;
+  color:white;
   font-style: italic;
   font-size: 17px;
 }
@@ -84,9 +95,19 @@
   display: flex;
 }
 
+.home {
+  font-family: 'Big Shoulders Stencil Text', cursive;
+}
+.home h1{
+  font-size: 80px;
+}
+.home h2{
+  font-size: 38px;
+}
 .home-text {
   margin-top: 10em;
   font-size: 45px;
+  font-family: 'Big Shoulders Stencil Text', cursive;
 }
 
 .home-text {
@@ -94,21 +115,23 @@
 }
 
 .navbar-brand a {
-  color: rgba(85, 10, 95, 0.952);
+  color: #4a4a4a;
+  background-color:  #ACEEFC;
+  
 }
+
 .navbar-item {
-  background-color: rgba(180, 192, 178, 0.952);
+  color: #ACEEFC;
 }
 
 .navbar-menu {
-  background-color: rgba(180, 192, 178, 0.952);
+  background-color: #ACEEFC ;
 }
 
 
 .found h1 {
   margin-bottom: 140px;
-  color: white;
-  font-style: italic;
+ font-style: italic;
   font-size: 30px;
   text-align: center;
 }
@@ -133,13 +156,84 @@
     display: flex;
     flex-direction: row;
     padding-top: 300px;
+ 
+}
 
+.home {
+  display :flex ;
+  flex-direction: column;
+  justify-content : center ;
+  align-items: center;
+  height : 500px ;
+  color : black;
+  font-size : 2rem ;
+  text-align: center ;
   
 }
 
-img
-{
-    width: 300px;
-    height: 219px;
-    border-radius: 10%;
+.image {
+  width :300px;
+  height: 400px;
+}
+
+.login-title {
+  color: #4a4a4a;
+  font-size: 50px;
+}
+
+.login-container {
+  margin-left: 50em;
+  margin-top: 2em;
+}
+
+.title-cart {
+  margin-left: 42%;
+  margin-top: 1em;
+  font-size: 65px;
+}
+
+.empty-cart {
+    margin-left: 42%;
+    margin-top: 3em;
+    font-size: 35px;
+}
+
+.imageFF img{
+border-radius: 10%;
+width: 6em;
+margin-left: 5px;
+width: 100px;
+
+height: 100px;
+
+margin-top: 1em;
+
+}
+
+.media{
+  height:150px;
+  width: 300px;
+  
+}
+
+.media-content{
+  margin-left: 17px;
+  margin-top: 15px;
+  /* color: white; */
+}
+
+.buut{
+  background-color: rgba(0, 255, 55, 0.157);
+  margin-top: 30px;
+}
+
+.filter select {
+  border : solid 1px ;
+  border-radius : 2em ;
+  color : black
+
+}
+
+.label {
+  color: #4a4a4a;
 }

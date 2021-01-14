@@ -60,7 +60,7 @@ class AddProduct extends Component {
       <Redirect to="/" />
     ) : (
       <>
-        <div className="hero is-primary ">
+        <div className="hero is-light ">
           <div className="hero-body container">
             <h4 className="title">Add Product</h4>
           </div>

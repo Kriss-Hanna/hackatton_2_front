@@ -14,8 +14,8 @@ const Cart = props => {
       <link rel="" href="https://silly-leavitt-399ea8.netlify.app/cart"/>
     </Helmet>
       <div className="success is-primary">
-        <div >
-          <h1 className="title">My Cart</h1>
+        <div className="title-cart" >
+          <h1>Mon panier</h1>
         </div>
       </div>
       <br />
@@ -37,20 +37,20 @@ const Cart = props => {
                   onClick={props.context.clearCart}
                   className="button is-warning "
                 >
-                  Clear cart
+                  Vider panier
                 </button>{" "}
                 <button
                   className="button is-success"
                   onClick={props.context.checkout}
                 >
-                  Checkout
+                  Commander
                 </button>
               </div>
             </div>
           </div>
         ) : (
           <div className="column">
-            <div className="title has-text-grey-light">No item in cart!</div>
+            <div className="title has-text-grey-light" className="empty-cart">Votre panier est vide !</div>
           </div>
         )}
       </div>

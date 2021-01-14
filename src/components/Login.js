@@ -35,11 +35,11 @@ class Login extends Component {
       <Helmet>    
       <title>Connexion</title>
       <meta name="description" content="Formulaire de connexion pour le site MydreamHouse"></meta>
-      <link rel="" href="https://silly-leavitt-399ea8.netlify.app/login"/>
+      <link href="https://silly-leavitt-399ea8.netlify.app/login"/>
     </Helmet>
         <div className="success is-primary ">
-          <div className="hero-body container">
-            <h1 className="title">Login</h1>
+          <div className="hero-body container" className="login-container">
+            <h1 className="login-title">Connexion</h1>
           </div>
         </div>
         <br />
@@ -57,7 +57,7 @@ class Login extends Component {
                 />
               </div>
               <div className="field">
-                <label className="label">Password: </label>
+                <label className="label">Mot de passe: </label>
                 <input
                   className="input"
                   type="password"
@@ -72,7 +72,7 @@ class Login extends Component {
                 <button
                   className="button is-primary is-outlined is-pulled-right"
                 >
-                  Submit
+                  Valider
                 </button>
               </div>
             </div>

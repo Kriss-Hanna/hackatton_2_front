@@ -12,17 +12,16 @@ function Products() {
                 <link rel="" href="https://silly-leavitt-399ea8.netlify.app/products"/>
             </Helmet>
             <div className="found">
-            <h1> Nos categories</h1>
+            <h1> Nos catégories</h1>
             </div>
             <div className="category">
             
-            <Link to ='/products/mobilier'>
+            <Link to ='/products/all'>
             <div className="field-card">
-                <p> Toutes nos produits </p>
+                <p> Tous nos produits </p>
            </div> 
-           </Link>
-           
-            <Link to='/products/Yourte' ><div className="field-card"> <p> Yourte </p> 
+           </Link>           
+            <Link to='/products/Yourte'><div className="field-card"> <p> Yourte </p> 
             </div>
             </Link>            
             <Link to='/products/Tiny'>

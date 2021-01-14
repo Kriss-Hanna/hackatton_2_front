@@ -7,7 +7,7 @@ function Banner() {
     return (
         <>
      <Helmet>    
-      <title>MydreamHouse</title>
+      <title>MyDreamHouse</title>
       <meta name="description" content="Page d'acceuil de MydreamHouse"></meta>
     </Helmet>
         <div className='banner'>            
