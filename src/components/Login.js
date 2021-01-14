@@ -35,6 +35,7 @@ class Login extends Component {
       <Helmet>    
       <title>Connexion</title>
       <meta name="description" content="Formulaire de connexion pour le site MydreamHouse"></meta>
+      <link rel="" href="https://silly-leavitt-399ea8.netlify.app/login"/>
     </Helmet>
         <div className="success is-primary ">
           <div className="hero-body container">

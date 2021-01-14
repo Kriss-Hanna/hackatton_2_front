@@ -11,6 +11,7 @@ const Cart = props => {
      <Helmet>    
       <title>Mon panier</title>
       <meta name="description" content="Page du panier du site MydreamHouse"></meta>
+      <link rel="" href="https://silly-leavitt-399ea8.netlify.app/cart"/>
     </Helmet>
       <div className="success is-primary">
         <div >

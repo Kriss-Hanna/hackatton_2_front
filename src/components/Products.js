@@ -9,10 +9,8 @@ function Products() {
             <Helmet>
                 <title>Maison insolite</title>
                 <meta name="description" content="Vous allez découvrir des logements qui sortent de l'ordinaire !"></meta>
+                <link rel="" href="https://silly-leavitt-399ea8.netlify.app/products"/>
             </Helmet>
-            <video autoplay loop muted>
-        	    <source src="https://www.youtube.com/watch?v=M4wMzgwW" type="video/mp4" />
-            </video>
             <div className="found">
             <h1> Nos categories</h1>
             </div>
