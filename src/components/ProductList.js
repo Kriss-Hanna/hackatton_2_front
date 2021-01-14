@@ -22,7 +22,7 @@ const ProductList = (props) => {
     <Helmet>    
       <title>Product List</title>
       <link rel="canonical" href=""></link>
-      <meta name="Product List" content="Product List"></meta>
+      <meta name="description" content="Product List"></meta>
     </Helmet>
       <div className="hero-isprimary">
         <div className="hero-body container">

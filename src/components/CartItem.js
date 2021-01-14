@@ -9,8 +9,7 @@ const CartItem = props => {
     <> 
     <Helmet>    
     <title>Carte Item </title>
-    <link rel="canonical" href=""></link>
-    <meta name="Carte Item" content="Product List"></meta>
+    <meta name="description" content="Product List"></meta>
   </Helmet>
     <div className=" column is-half">
       <div className="box">

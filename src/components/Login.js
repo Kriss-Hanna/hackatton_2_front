@@ -34,8 +34,7 @@ class Login extends Component {
       <>
       <Helmet>    
       <title>Connexion</title>
-      <link rel="canonical" href=""></link>
-      <meta name="Connexion" content="Formulaire de connexion pour le site MydreamHouse"></meta>
+      <meta name="description" content="Formulaire de connexion pour le site MydreamHouse"></meta>
     </Helmet>
         <div className="success is-primary ">
           <div className="hero-body container">

@@ -1,21 +1,20 @@
-import React from 'react';
-import Helmet from 'react-helmet' ;
+import React from 'react'
+import Helmet from 'react-helmet'
+import {Link} from 'react-router-dom'
 
 function Home() {
     return (
-        <>
-        <Helmet>
-        <title>MydreamHouse</title>
-        <link rel="canonical" href=""></link>
-        <meta name="immobiliers insolite" content="My dream House est un site d'immobilier qui propose plusieurs types logements atypiques!"></meta>
-        </Helmet>
-        <div className="home-contain">
-            <div className="home-text">
-                <h1>My Dream House, l'immobilier insolite</h1>
-                <h2>Retrouvez ici tous les logements les plus insolites et une liste de produits variés</h2>
-            </div>
-        </div>
-        </>
+
+        <div>
+            <Helmet>
+                <title>My dream House : Trouvez la maison de vos rêves !</title>
+                <meta name="description" content="Vous allez découvrir des logements qui sortent de l'ordinaire !"></meta>
+            </Helmet>
+            
+       </div>
+    
+         
+        
     )
 }
 

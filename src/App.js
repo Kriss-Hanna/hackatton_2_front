@@ -152,7 +152,7 @@ export default class App extends Component {
             aria-label="main navigation"
           >
             <div className="navbar-brand">
-              <a href="http://localhost:3000/" className="navbar-item is-size-4">MydreamHouse</a>
+              <a href="http://localhost:3000/home" className="navbar-item is-size-4">MydreamHouse</a>
               <label
                 role="button"
                 class="navbar-burger burger"
@@ -203,6 +203,7 @@ export default class App extends Component {
             <Banner />
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/home" component={Home} />
               <Route exact path="/products" component={Products} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/cart" component={Cart} />

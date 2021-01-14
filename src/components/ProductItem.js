@@ -8,8 +8,7 @@ const ProductItem = props => {
     <>
     <Helmet>    
       <title>Product Item </title>
-      <link rel="canonical" href=""></link>
-      <meta name="Product Item" content="Product List"></meta>
+      <meta name="description" content="Product List"></meta>
     </Helmet>
     <div className=" column ishalf">
       <div className="boxyou">

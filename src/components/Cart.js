@@ -10,8 +10,7 @@ const Cart = props => {
     <>
      <Helmet>    
       <title>Mon panier</title>
-      <link rel="canonical" href=""></link>
-      <meta name="Panier" content="Page du panier du site MydreamHouse"></meta>
+      <meta name="description" content="Page du panier du site MydreamHouse"></meta>
     </Helmet>
       <div className="success is-primary">
         <div >

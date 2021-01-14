@@ -8,8 +8,7 @@ function Banner() {
         <>
      <Helmet>    
       <title>MydreamHouse</title>
-      <link rel="canonical" href=""></link>
-      <meta name="Banner" content="Product List"></meta>
+      <meta name="description" content="Page d'acceuil de MydreamHouse"></meta>
     </Helmet>
         <div className='banner'>            
         </div>

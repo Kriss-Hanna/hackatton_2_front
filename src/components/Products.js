@@ -2,14 +2,13 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import {Link} from 'react-router-dom'
 
-function Home() {
+function Products() {
     return (
 
         <div>
             <Helmet>
                 <title>Maison insolite</title>
-                <link rel="canonical" href=""></link>
-                <meta name="immobiliers alternatif" content="Vous allez découvrir des logements qui sortent de l'ordinaire !"></meta>
+                <meta name="description" content="Vous allez découvrir des logements qui sortent de l'ordinaire !"></meta>
             </Helmet>
             <video autoplay loop muted>
         	    <source src="https://www.youtube.com/watch?v=M4wMzgwW" type="video/mp4" />
@@ -54,4 +53,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default Products;
