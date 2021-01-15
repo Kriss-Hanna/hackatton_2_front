@@ -68,9 +68,9 @@ class Login extends Component {
               {this.state.error && (
                 <div className="has-text-danger">{this.state.error}</div>
               )}
-              <div className="field is-clearfix">
+              <div className="fiele">
                 <button
-                  className="button is-primary is-outlined is-pulled-right"
+                  className="buttoni"
                 >
                   Valider
                 </button>

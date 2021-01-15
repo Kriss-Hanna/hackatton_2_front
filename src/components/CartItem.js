@@ -11,9 +11,9 @@ const CartItem = props => {
     <title>Carte Item </title>
     <meta name="description" content="Product List"></meta>
   </Helmet>
-    <div className=" column is-half">
-      <div className="box">
-        <div className="media">
+    <div className=" column">
+      <div className="box-media">
+        <div className="media-cart">
           <div className="media-left">
            <div className='imageFF'>
               <img

@@ -3,6 +3,8 @@ import ProductItem from './ProductItem';
 import withContext from '../withContext';
 import Helmet from 'react-helmet'
 
+import { Link } from 'react-router-dom'
+
 import '../App.css'
 
 const ProductList = (props) => {
@@ -24,14 +26,14 @@ const ProductList = (props) => {
       <link rel="canonical" href=""></link>
       <meta name="description" content="Product List"></meta>
     </Helmet>
-      <div className="hero-isprimary">
+      <div className="hero-is-primary">
         <div className="hero-body container">
-          <h1 className="title">Nos Habitations</h1>
+          <h1 className="title-habitations">Nos Habitations</h1>
         </div>
         <div className="form-button">          
           <form className="filter">
             <select value={select.price} name="price" onChange={filter}>
-              <option value="">Filtre prix </option>
+              <option  value="">Filtre prix </option>
               <option value="10000">Prix supérieur 10.000 </option>
               <option value="20000">Prix supérieur 20.000 </option>
               <option value="50000">Prix supérieur 50.000</option>
@@ -65,6 +67,10 @@ const ProductList = (props) => {
             </div>
           )}
         </div>
+        <Link to ='/products'>
+          <div className="buttona">
+        <button className='buttoni'> retour </button> 
+        </div></Link>
       </div>
     </>
   );

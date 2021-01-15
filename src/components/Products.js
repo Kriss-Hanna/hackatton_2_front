@@ -12,7 +12,7 @@ function Products() {
                 <link rel="" href="https://silly-leavitt-399ea8.netlify.app/products"/>
             </Helmet>
             <div className="found">
-            <h1> Nos catégories</h1>
+                <h1> Nos catégories</h1>
             </div>
             <div className="category">
             

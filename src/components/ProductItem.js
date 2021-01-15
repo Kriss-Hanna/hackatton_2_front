@@ -48,7 +48,7 @@ const ProductItem = props => {
               >
                 Ajouter au panier
               </button>
-            </div>
+            </div>            
           </div>
         </div>
       </div>

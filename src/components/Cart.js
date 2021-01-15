@@ -21,7 +21,7 @@ const Cart = props => {
       <br />
       <div >
         {cartKeys.length ? (
-          <div >
+          <div className = "cartflex">
             {cartKeys.map(key => (
               <CartItem
                 cartKey={key}
